@@ -8,7 +8,7 @@ namespace FactoryDesign
 {
     public interface IProduct
     {
-        string GetTypeOfProduct();
+    
         void Save();
         void Book();
 

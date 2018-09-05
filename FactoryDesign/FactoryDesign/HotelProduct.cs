@@ -8,10 +8,6 @@ namespace FactoryDesign
 {
     class HotelProduct:IProduct
     {
-        public string GetTypeOfProduct()
-        {
-            return "Hotel";
-        }
         public void Save()
         {
             Console.WriteLine("Saving Hotel Product");

@@ -8,10 +8,7 @@ namespace FactoryDesign
 {
     class ActivityProduct:IProduct
     {
-        public string GetTypeOfProduct()
-        {
-            return "Activity";
-        }
+     
         public void Save()
         {
             Console.WriteLine("Saving Activity Product");

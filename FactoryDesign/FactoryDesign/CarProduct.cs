@@ -8,10 +8,7 @@ namespace FactoryDesign
 {
     class CarProduct:IProduct
     {
-        public string GetTypeOfProduct()
-        {
-            return "Car";
-        }
+       
         public void Save()
         {
             Console.WriteLine("Saving Car Product");

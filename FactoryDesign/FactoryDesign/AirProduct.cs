@@ -8,10 +8,7 @@ namespace FactoryDesign
 {
     class AirProduct:IProduct
     {
-        public string GetTypeOfProduct()
-        {
-            return "Air";
-        }
+        
         public void Save()
         {
             Console.WriteLine("Saving Air Product");

@@ -10,15 +10,18 @@ namespace FactoryDesign
     {
         static void Main(string[] args)
         {
-            string product = Console.ReadLine();
-            ObjectFactory ObjectFactory = new ObjectFactory();
-            IProduct iProduct = ObjectFactory.GetProduct(product);
-            Console.WriteLine(iProduct.GetTypeOfProduct());
-            iProduct.Book();
-            iProduct.Save();
+            Program program = new Program();
+            Console.WriteLine("Enter the name of the product- CarProduct for car, AirProduct For Air, ActivityProduct for Activity and HotelProduct for Hotel ");
+            string productName = Console.ReadLine();
+            var product = ObjectFactory.GetProduct(productName);
+            program.MakeBooking(product);
             Console.ReadKey();
-
-
+        }
+        void MakeBooking(IProduct product)
+        {
+            product.Save();
+            product.Book();
         }
     }
+    
 }
