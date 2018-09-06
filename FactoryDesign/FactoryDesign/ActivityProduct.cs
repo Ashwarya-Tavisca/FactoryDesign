@@ -8,13 +8,27 @@ namespace FactoryDesign
 {
     class ActivityProduct:IProduct
     {
-     
+        public string name = "Sky Diving";
+        public int id = 11;
+        public bool isBook;
+        public string productOperation;
+
         public void Save()
         {
+            productOperation = " Save ";
+            isBook = false;
+            FileDatabase obj = new FileDatabase();
+            obj.WriteData(name, id, productOperation, isBook);
+            Logger.Instance.WriteLog("Saved Activity Product");
             Console.WriteLine("Saving Activity Product");
         }
         public void Book()
         {
+            productOperation = " Book ";
+            isBook = true;
+            FileDatabase obj = new FileDatabase();
+            obj.WriteData(name, id, productOperation, isBook);
+            Logger.Instance.WriteLog("Booked Activity Product");
             Console.WriteLine("Booked Activity Product");
         }
     }

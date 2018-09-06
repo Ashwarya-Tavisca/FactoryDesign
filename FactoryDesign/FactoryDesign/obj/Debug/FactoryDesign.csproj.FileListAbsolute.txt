@@ -5,3 +5,10 @@ c:\users\ajoshi\source\repos\FactoryDesign\FactoryDesign\bin\Debug\FactoryDesign
 c:\users\ajoshi\source\repos\FactoryDesign\FactoryDesign\bin\Debug\FactoryDesign.pdb
 c:\users\ajoshi\source\repos\FactoryDesign\FactoryDesign\obj\Debug\FactoryDesign.exe
 c:\users\ajoshi\source\repos\FactoryDesign\FactoryDesign\obj\Debug\FactoryDesign.pdb
+C:\Users\ajoshi\Desktop\FactoryDesign\FactoryDesign\FactoryDesign\bin\Debug\FactoryDesign.exe.config
+C:\Users\ajoshi\Desktop\FactoryDesign\FactoryDesign\FactoryDesign\bin\Debug\FactoryDesign.exe
+C:\Users\ajoshi\Desktop\FactoryDesign\FactoryDesign\FactoryDesign\bin\Debug\FactoryDesign.pdb
+C:\Users\ajoshi\Desktop\FactoryDesign\FactoryDesign\FactoryDesign\obj\Debug\FactoryDesign.csprojResolveAssemblyReference.cache
+C:\Users\ajoshi\Desktop\FactoryDesign\FactoryDesign\FactoryDesign\obj\Debug\FactoryDesign.csproj.CoreCompileInputs.cache
+C:\Users\ajoshi\Desktop\FactoryDesign\FactoryDesign\FactoryDesign\obj\Debug\FactoryDesign.exe
+C:\Users\ajoshi\Desktop\FactoryDesign\FactoryDesign\FactoryDesign\obj\Debug\FactoryDesign.pdb

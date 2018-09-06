@@ -10,6 +10,7 @@ namespace FactoryDesign
     {
         static void Main(string[] args)
         {
+            Logger.Instance.WriteLog("In Main ");
             Program program = new Program();
             Console.WriteLine("Enter the name of the product- CarProduct for car, AirProduct For Air, ActivityProduct for Activity and HotelProduct for Hotel ");
             string productName = Console.ReadLine();
