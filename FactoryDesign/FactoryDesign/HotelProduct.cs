@@ -8,27 +8,14 @@ namespace FactoryDesign
 {
     class HotelProduct:IProduct
     {
+        public string type = "Hotel";
         public string name = "Hyatt Regency";
-        public int id = 04;
-        public bool isBook;
-        public string productOperation;
-        public void Save()
-        {
-            productOperation = " Save ";
-            isBook = false;
-            FileDatabase obj = new FileDatabase();
-            obj.WriteData(name, id, productOperation, isBook);
-            Logger.Instance.WriteLog("Saved Hotel Product");
-            Console.WriteLine("Saving Hotel Product");
-        }
-        public void Book()
-        {
-            productOperation = " Book ";
-            isBook = true;
-            FileDatabase obj = new FileDatabase();
-            obj.WriteData(name, id, productOperation, isBook);
-            Logger.Instance.WriteLog("Booked Hotel Product");
-            Console.WriteLine("Booked Hotel Product");
-        }
+        public bool isbooked = false;
+        public int fare = 50000;
+
+        public string ProductType { get { return type; } set { type = value; } }
+        public string ProductName { get { return name; } set { name = value; } }
+        public bool IsBooked { get { return isbooked; } set { isbooked = value; } }
+        public int Fare { get { return fare; } set { fare = value; } }
     }
 }

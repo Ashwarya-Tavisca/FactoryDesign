@@ -9,8 +9,8 @@ namespace FactoryDesign
 {
     class Logger
     {
-        public static Logger _object;
-
+        private Logger() { }
+        public static Logger _object; 
         public static Logger Instance
         {
             get
@@ -22,22 +22,14 @@ namespace FactoryDesign
             }
         }
 
-        public Logger()
+        public void WriteLog(string message)
         {
-            _fileStreamer = File.OpenWrite(@"C:\Users\ajoshi\LogFile.txt");
-            _streamWriter = new StreamWriter(_fileStreamer);
+            using (StreamWriter sw = File.AppendText(@"C:\Users\ajoshi\Desktop\LogFile.txt"))
+            {
+                sw.WriteLine(message);
+            }
         }
 
-        FileStream _fileStreamer;
-        StreamWriter _streamWriter;
-
-        public void WriteLog(string messages)
-        {
-            StringBuilder message = new StringBuilder();
-            message.AppendLine("Message: " + messages);
-
-            _streamWriter.WriteLine(message.ToString());
-            _streamWriter.Flush();
-        }
+       
     }
 }

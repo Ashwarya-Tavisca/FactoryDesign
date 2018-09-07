@@ -7,23 +7,19 @@ using System.IO;
 
 namespace FactoryDesign
 {
-    class FileDatabase
+    class FileDatabase:IRepository
     {
-         public void WriteData(string name,int id,string typeOfOperation, bool isBook)
+         public void Add(IProduct product,int fare)
         {
-            Logger.Instance.WriteLog("Writing to file ");
-            FileStream fs = new FileStream("C:\\Users\\ajoshi\\Desktop\\save.txt", FileMode.Append, FileAccess.Write);
-            StreamWriter sw = new StreamWriter(fs);
-            sw.WriteLine("Type Of Operation Performed : " + typeOfOperation);
-            sw.WriteLine("Name : " + name);
-            sw.WriteLine("Id : " + id);
-            if (isBook == true)
-                sw.WriteLine("Is Booked : True");
-            else
-                sw.WriteLine("Is Booked :False");
-            sw.Flush();
-            sw.Close();
-            fs.Close();
+            Logger.Instance.WriteLog("Adding content to the file.");
+            using (StreamWriter sw = File.AppendText(@"C:\\Users\\ajoshi\\Desktop\\save.txt"))
+            {
+                sw.WriteLine("Product Type: " + product.ProductType);
+                sw.WriteLine("Product Name: " + product.ProductName);
+                sw.WriteLine("Product Fare: " + fare);
+                sw.WriteLine("IsBooked: " + product.IsBooked);
+
+            }
         }
 
     }

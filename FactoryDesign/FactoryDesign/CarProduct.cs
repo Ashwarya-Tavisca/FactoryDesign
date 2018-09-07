@@ -8,27 +8,15 @@ namespace FactoryDesign
 {
     class CarProduct:IProduct
     {
-        public string name = "Audi";
-        public int id=27;
-        public bool isBook;
-        public string productOperation;
+        public string type = "Car";
+        public string name= "Audi Q7";
+        public bool isbooked = false;
+        public int fare = 30;
 
-        public void Save()
-        {
-            productOperation =" Save ";
-            FileDatabase obj = new FileDatabase();
-            obj.WriteData(name, id, productOperation, isBook);
-            Logger.Instance.WriteLog("Saved Car product");
-            Console.WriteLine("Saving Car Product");
-        }
-        public void Book()
-        {
-            productOperation = " Book ";
-            isBook = true;
-            FileDatabase obj = new FileDatabase();
-            obj.WriteData(name, id, productOperation, isBook);
-            Logger.Instance.WriteLog("Booked Car product");
-            Console.WriteLine("Booked Car Product");
-        }
+        public string ProductType { get { return type; } set { type = value; } }
+        public string ProductName { get { return name; } set { name = value; } }
+        public bool IsBooked { get { return isbooked; } set { isbooked = value; } }
+        public int Fare { get { return fare; } set { fare = value; } }
+      
     }
 }

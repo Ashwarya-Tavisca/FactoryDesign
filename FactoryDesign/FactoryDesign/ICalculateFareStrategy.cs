@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace FactoryDesign
 {
-    public interface IRepository
+    public interface ICalculateFareStrategy
     {
-        void Add(IProduct product, int fare);
-
-
+        int CalculateFareOfProduct(int totalFare);
     }
 }

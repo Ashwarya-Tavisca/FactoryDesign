@@ -8,28 +8,14 @@ namespace FactoryDesign
 {
     class AirProduct:IProduct
     {
-        public string name = "Air India";
-        public int id = 26;
-        public bool isBook;
-        public string productOperation;
+        public string type = "Air";
+        public string name = "Indigo";
+        public bool isbooked = false;
+        public int fare = 8000;
 
-        public void Save()
-        {
-            productOperation = " Save ";
-            isBook = false;
-            FileDatabase obj = new FileDatabase();
-            obj.WriteData(name, id, productOperation, isBook);
-            Logger.Instance.WriteLog("Saved Air Product");
-            Console.WriteLine("Saving Air Product");
-        }
-        public void Book()
-        {
-            productOperation = " Book ";
-            isBook = true;
-            FileDatabase obj = new FileDatabase();
-            obj.WriteData(name, id, productOperation, isBook);
-            Logger.Instance.WriteLog("Booked Air Product");
-            Console.WriteLine("Booked Air Product");
-        }
+        public string ProductType { get { return type; } set { type = value; } }
+        public string ProductName { get { return name; } set { name = value; } }
+        public bool IsBooked { get { return isbooked; } set { isbooked = value; } }
+        public int Fare { get { return fare; } set { fare = value; } }
     }
 }

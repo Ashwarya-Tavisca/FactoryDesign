@@ -8,28 +8,14 @@ namespace FactoryDesign
 {
     class ActivityProduct:IProduct
     {
+        public string type = "Activity";
         public string name = "Sky Diving";
-        public int id = 11;
-        public bool isBook;
-        public string productOperation;
+        public bool isbooked = false;
+        public int fare = 50000;
 
-        public void Save()
-        {
-            productOperation = " Save ";
-            isBook = false;
-            FileDatabase obj = new FileDatabase();
-            obj.WriteData(name, id, productOperation, isBook);
-            Logger.Instance.WriteLog("Saved Activity Product");
-            Console.WriteLine("Saving Activity Product");
-        }
-        public void Book()
-        {
-            productOperation = " Book ";
-            isBook = true;
-            FileDatabase obj = new FileDatabase();
-            obj.WriteData(name, id, productOperation, isBook);
-            Logger.Instance.WriteLog("Booked Activity Product");
-            Console.WriteLine("Booked Activity Product");
-        }
+        public string ProductType { get { return type; } set { type = value; } }
+        public string ProductName { get { return name; } set { name = value; } }
+        public bool IsBooked { get { return isbooked; } set { isbooked = value; } }
+        public int Fare { get { return fare; } set { fare = value; } }
     }
 }

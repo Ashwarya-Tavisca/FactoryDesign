@@ -8,9 +8,10 @@ namespace FactoryDesign
 {
     public interface IProduct
     {
-    
-        void Save();
-        void Book();
+        string ProductType { get; set; }
+        string ProductName { get; set; }
+        bool IsBooked { get; set; }
+        int Fare { get; set; }
 
     }
 }
