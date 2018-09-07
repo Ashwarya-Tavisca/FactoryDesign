@@ -12,7 +12,7 @@ namespace FactoryDesign
         public void Add(IProduct product, int Fare)
             {
                 SqlConnection connectionobject = new SqlConnection();
-                connectionobject.ConnectionString = "Data Source=TAVDESK092;Initial Catalog=Product;Integrated Security=True";
+                connectionobject.ConnectionString = "Data Source=.;Initial Catalog=ProductsDatabase;User ID=sa;Password=test123!@#";
                 connectionobject.Open();
                 string query = "insert into " + product.ProductType + " values(@name,@fare,@isbooked)";
                 SqlCommand cmd = new SqlCommand(query, connectionobject);

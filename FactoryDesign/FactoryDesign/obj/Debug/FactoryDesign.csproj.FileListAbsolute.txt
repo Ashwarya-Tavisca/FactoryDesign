@@ -12,3 +12,10 @@ C:\Users\ajoshi\Desktop\FactoryDesign\FactoryDesign\FactoryDesign\obj\Debug\Fact
 C:\Users\ajoshi\Desktop\FactoryDesign\FactoryDesign\FactoryDesign\obj\Debug\FactoryDesign.csproj.CoreCompileInputs.cache
 C:\Users\ajoshi\Desktop\FactoryDesign\FactoryDesign\FactoryDesign\obj\Debug\FactoryDesign.exe
 C:\Users\ajoshi\Desktop\FactoryDesign\FactoryDesign\FactoryDesign\obj\Debug\FactoryDesign.pdb
+C:\Users\ajoshi\Desktop\New folder\FactoryDesign\FactoryDesign\FactoryDesign\bin\Debug\FactoryDesign.exe.config
+C:\Users\ajoshi\Desktop\New folder\FactoryDesign\FactoryDesign\FactoryDesign\bin\Debug\FactoryDesign.exe
+C:\Users\ajoshi\Desktop\New folder\FactoryDesign\FactoryDesign\FactoryDesign\bin\Debug\FactoryDesign.pdb
+C:\Users\ajoshi\Desktop\New folder\FactoryDesign\FactoryDesign\FactoryDesign\obj\Debug\FactoryDesign.csprojResolveAssemblyReference.cache
+C:\Users\ajoshi\Desktop\New folder\FactoryDesign\FactoryDesign\FactoryDesign\obj\Debug\FactoryDesign.csproj.CoreCompileInputs.cache
+C:\Users\ajoshi\Desktop\New folder\FactoryDesign\FactoryDesign\FactoryDesign\obj\Debug\FactoryDesign.exe
+C:\Users\ajoshi\Desktop\New folder\FactoryDesign\FactoryDesign\FactoryDesign\obj\Debug\FactoryDesign.pdb
